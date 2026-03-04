@@ -15,7 +15,7 @@ const client = new Client({
   intents: [GatewayIntentBits.Guilds]
 });
 
-const TOKEN = "MTQ3ODQzNjk1ODExOTI2ODQ2Mg.GyS6-9.Ln4o02Dxuf3Xtt7RSKMNyoervTW0kT2v98wDcs";
+const TOKEN = process.env.TOKEN;
 const CLIENT_ID = "1478436958119268462";
 const GUILD_ID = "1458889992628867196";
 
@@ -146,5 +146,6 @@ client.on('interactionCreate', async interaction => {
     }
   }
 });
+
 
 client.login(TOKEN);
